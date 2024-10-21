@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <img src="images/pizzacat.jpg" alt="logo">
+        <div class="Home">
+            <a href="index.html">ItalianPurrza</a>
+        </div>
+
+        <div class="empty-element"></div>
+        <div class="links-nav">
+            <a href="#">Best Sellers</a>
+
+            <a href="#">Pizzas</a>
+            <a href="#">Various Cat Employees</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="image-in-contact">
+            <header>
+                <div class="form">
+                    <h1>
+                        Contact
+                    </h1>
+                    <p>
+                        Are you thinking of contacting us? Fill our form and send away! We are open to answering any
+                        question you might have for our pizza's or cat. Our personal will contact you back as soon as
+                        purrrsible!!
+                    </p>
+                </div>
+            </header>
+
+        </div>
+
+        <section>
+            <div class="formName">
+                <h2>Form</h2>
+            </div>
+            <form action="emailscript.php">
+
+                <div class="smallerformfields">
+                    <div class="one">
+                        <div id="labels">
+                            <label id="textboxid" for="firstname">First name</label>
+                            <label id="textboxid" for="lastname">Last name</label>
+                        </div>
+                        <div id="left">
+
+                            <input id="textboxid" type="text" name=" firstname" placeholder="Meowson"
+                                required />
+
+                            <input id="textboxid" type="text" name="lastname"  placeholder="Pepper"
+                                required />
+                        </div>
+                    </div>
+
+
+
+                    <label id="textboxid" for="email">Email</label>
+                    <input type="email" name="email" id="email" style="width: 425px;"
+                        placeholder="meowsonpepper@gmail.com" required />
+
+
+                    <div id="labels2">
+                        <label id="textboxid" for="woonplaats">Place of residence</label>
+                        <label id="textboxid" for="date">Date of birth</label>
+                    </div>
+
+                    <div id="left">
+                        <input id="textboxid" type="text" name="woonplaats" placeholder="Meow City"
+                            required />
+                        <input id="textboxid" type="date" style="font-size: 15px;" required />
+                    </div>
+
+                    <label id="textboxid" for="topic">Topic</label>
+
+
+                    <select id="topic" name="topic" style="width: 425px;" required>
+                        <option value="" disabled selected>It's about...</option>
+                        <option value="Pizza">pizza</option>
+                        <option value="Cat">cat</option>
+                        <option value="Else">else</option>
+                    </select>
+
+                    <br>
+                    <label id="textboxid" for="question">Question</label>
+                    <textarea id="question" name="question" rows="6" cols="50" required ></textarea><br>
+                </div>
+                <div class="smallerformfields2">
+                    <label for="radio">Do you want to subscribe to our newspaper</label>
+                    <div id="groupgroup1">
+                        <div id="group1">
+
+
+                            <input type="radio" value="val1" name="groupie">
+                            <label for="yes">Yes</label>
+                        </div>
+
+                        <div id="group1">
+                            <input type="radio" value="val2" name="groupie">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+
+                    <div id="formfield">
+                        <input type="checkbox" name="terms-and-condition" id="terms-and-condition" required />
+                        <label for="terms-and-condition">I agree to the terms and conditions</label>
+                    </div>
+
+                    <button id="button" type="reset">Send</button>
+                </div>
+            </form>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <div class="seperated">
+            <div class="group1">
+                <div class="logo">
+                    <img src="images/pizzacat.jpg" alt="logo: pizzacat">
+                    <p>Copyright 2024 ItalianPurrza</p>
+                </div>
+                <div class="icons">
+                    <p><i class="fa-brands fa-steam"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-ideal"></i>
+                    </p>
+
+                </div>
+            </div>
+            <div class="group2">
+                <div class="seperated">
+                    <div class="footer-stuff">
+                        <div class="row-row">
+                            <a href="#">Privacystatement</a>
+                            <a href="#">General Terms and Conditions</a>
+                            <a href="#">CookiePolicy</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
